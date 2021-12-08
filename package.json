@@ -38,7 +38,7 @@
     "dev": "npm-run-all --parallel dev:*",
     "dev:build-server": "webpack --config webpack.server.js --mode=development --watch",
     "dev:build-client": "webpack --config webpack.client.js --mode=development --watch",
-    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\""
+    "dev:server": "node --watch build --exec \"node build/bundle.js\""
   },
   "devDependencies": {
     "webpack-cli": "^3.3.10"
